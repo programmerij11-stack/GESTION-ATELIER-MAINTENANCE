@@ -84,7 +84,7 @@ function loadData() {
 function doLogin() {
   var u = document.getElementById('loginUser').value.trim();
   var p = document.getElementById('loginPass').value;
-  if (u === 'admin' && p === 'admin') {
+  if (p === 'admin' && a === 'admin') {
     sessionStorage.setItem('user', JSON.stringify({ user: u, role: 'admin', canConsult: true, canSaisie: true }));
     document.getElementById('loginError').style.display = 'none';
     showApp(u, 'admin', true, true);
